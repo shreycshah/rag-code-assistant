@@ -8,3 +8,5 @@ venv/
 
 # PyCharm
 .idea/
+
+.env.example
