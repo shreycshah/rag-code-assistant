@@ -1,0 +1,37 @@
+# LLM & Embeddings
+openai==1.12.0
+anthropic==0.18.1
+sentence-transformers==2.3.1
+transformers==4.37.2
+
+# Vector Database
+pinecone-client==3.0.3
+
+# Retrieval
+rank-bm25==0.2.2
+
+# Caching
+redis==5.0.1
+
+# API & Web
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+streamlit==1.31.1
+pydantic==2.6.1
+pydantic-settings==2.1.0
+
+# Code Parsing
+tree-sitter==0.23.0
+tree-sitter-python
+gitpython==3.1.41
+
+# Utilities
+python-dotenv==1.0.1
+pyyaml==6.0.1
+tenacity==8.2.3
+loguru==0.7.2
+
+# Evaluation
+nltk==3.8.1
+rouge-score==0.1.2
+scikit-learn==1.4.0

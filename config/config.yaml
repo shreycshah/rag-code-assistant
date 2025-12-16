@@ -1,0 +1,43 @@
+ingestion:
+  chunk_size: 512
+  chunk_overlap: 50
+  max_file_size_kb: 500
+  supported_extensions:
+    - .py
+    - .js
+    - .ts
+    - .java
+
+retrieval:
+  hybrid:
+    bm25_weight: 0.5
+    vector_weight: 0.5
+    top_k_candidates: 20
+  reranking:
+    enabled: true
+    top_k_final: 5
+
+generation:
+  max_tokens: 1000
+  temperature: 0.7
+
+routing:
+  simple_keywords:
+    - find
+    - locate
+    - where
+    - search
+  complex_keywords:
+    - explain
+    - why
+    - how does
+    - architecture
+    - design pattern
+
+evaluation:
+  benchmark_path: eval/questions.json
+  metrics:
+    - exact_match
+    - bleu
+    - rouge
+    - semantic_similarity
